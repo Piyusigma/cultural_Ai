@@ -27,6 +27,7 @@ jobs:
         run: npm run build
         env:
           VITE_GEMINI_KEY: ${{ secrets.VITE_GEMINI_KEY }}
+          VITE_GROK_KEY: ${{ secrets.VITE_GROK_KEY }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
